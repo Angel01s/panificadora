@@ -21,7 +21,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('Inicio', [InicioController::class, 'index']);
+Route::get('/Inicio', [InicioController::class, 'index']);
 
 Route::get('Mis-Datos', [UsuariosController::class, 'MisDatos']);
 Route::put('Mis-Datos', [UsuariosController::class, 'DatosUpdate']);
