@@ -14,6 +14,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        
+        \App\Models\User::factory(1)->create();
+
+        \App\Models\User::factory()->create([
+            'name' => 'admin',
+            'email' => 'admin@gmail.com',
+            'password' => '12345678',
+            'rol' => 'Administrador'
+        ]);
     }
 }
