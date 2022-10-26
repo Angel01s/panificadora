@@ -7,7 +7,7 @@
   <!-- /.login-logo -->
   <div class="login-box-body">
     <p class="login-box-msg">Inicio de Sesión</p>
-
+    @csrf
     <form action="{{ route('login') }}" method="post">
 
     @csrf
